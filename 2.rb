@@ -15,4 +15,9 @@
 #
 #
 ## Решение:
+require 'digest'
+
+
+count = gets.chomp
+puts Digest::MD5.hexdigest (count)
 

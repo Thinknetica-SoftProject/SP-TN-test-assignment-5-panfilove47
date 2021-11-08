@@ -20,7 +20,7 @@ floor = 0
 File.readlines("data/1.txt", "r").each do |line|
   if line == "("
     floor += 1
-  else 
+  elsif  line == ")"
     floor -= 1
   end
 end
