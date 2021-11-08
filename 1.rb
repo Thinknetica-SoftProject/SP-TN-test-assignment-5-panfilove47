@@ -16,18 +16,18 @@
 #
 ## Решение:
 
-floor = 0
-File.readlines("data/1.txt", "r").each do |line|
-  if line == "("
-    floor += 1
-  elsif  line == ")"
-    floor -= 1
-  end
+File.open("data/1.txt", "r") do |file|
+  floor = 0
+  text = file.read()
+  len = file.size()
+  len.times do |num|
+    if text[num] == ')'
+      floor -= 1
+    end
+    if text[num] == '('
+      floor += 1
+    end
+
 end
 puts floor
-
-
-
-
-
-
+end
