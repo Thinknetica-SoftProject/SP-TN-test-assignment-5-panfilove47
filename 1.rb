@@ -16,6 +16,18 @@
 #
 ## Решение:
 
+floor = 0
+File.readlines("data/1.txt", "r").each do |line|
+  if line == "("
+    floor += 1
+  else 
+    floor -= 1
+  end
+end
+puts floor
+
+
+
 
 
 
